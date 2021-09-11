@@ -1,0 +1,16 @@
+body {
+  background: #e5e5e5;
+}
+
+nav ul li {
+  margin: 0 20px;
+}
+
+.nav-item a {
+  color: #cacad2;
+}
+
+.nav-item .active {
+  color: #f2ad5f;
+  border-bottom: 2px solid #f2ad5f;
+}
