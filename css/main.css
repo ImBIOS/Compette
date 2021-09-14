@@ -1,5 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Asap&display=swap");
+* {
+  font-family: "Asap", sans-serif;
+}
+
 body {
   background: #e5e5e5;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 48px;
 }
 
 nav ul li {
@@ -26,9 +36,74 @@ nav ul li {
 
 .hero h1 {
   font-size: 4rem;
+  font-weight: 600;
 }
 
 .team-work {
   margin-top: 15vh;
+}
+
+.company {
+  width: 70%;
+}
+
+.reason {
+  margin-top: 240px;
+  margin-bottom: 240px;
+}
+
+.reason a {
+  text-decoration: underline;
+  color: #0f1d37;
+}
+
+.reason ul {
+  list-style: none;
+  /* Remove default bullets */
+  list-style-position: inside;
+  margin: 50px 0;
+}
+
+.reason ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.reason ul li:nth-child(odd)::before {
+  content: url("../img/dot-dark.svg");
+  display: inline-block;
+  /* Needed to add space between the bullet and the text */
+  width: 1em;
+  /* Also needed for space (tweak if needed) */
+  margin-left: -1em;
+  /* Also needed for space (tweak if needed) */
+  margin-right: 1.5em;
+  vertical-align: middle;
+  margin-top: 10px;
+}
+
+.reason ul li:nth-child(even)::before {
+  content: url("../img/dot-orange.svg");
+  display: inline-block;
+  /* Needed to add space between the bullet and the text */
+  width: 1em;
+  /* Also needed for space (tweak if needed) */
+  margin-left: -1em;
+  /* Also needed for space (tweak if needed) */
+  margin-right: 1.5em;
+  vertical-align: middle;
+  margin-top: 10px;
+}
+
+.reason ul li span {
+  vertical-align: middle;
+  color: #0f1d37;
+  font-size: 22px;
+  line-height: 50px;
+}
+
+.featured h2 {
+  margin-bottom: 120px;
 }
 /*# sourceMappingURL=main.css.map */
